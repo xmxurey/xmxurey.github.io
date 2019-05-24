@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="OS: Mac 10.13 framework: Hexo blog: Github pages  用Github pages发布blog， 同时在同一个repo新建名叫hexo的branch来管理markdown源文件  一. 在github新建repo 拥有一个 github 账号，  新建repo叫 &amp;lt;username&amp;gt;.github.io, 用你的账号替换&amp;lt;userna">
-<meta name="keywords" content="博客">
+  <meta name="description" content="Prerequisite:  ubuntu 16.04 or above Python 3  1. Shadowsocks installation12sudo apt install python3-pippip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip 2. Configuration12sud">
+<meta name="keywords" content="server">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2018/06/11/搭建个人博客/index.html">
+<meta property="og:title" content="install shadowsocks on ubuntu server">
+<meta property="og:url" content="http://yoursite.com/2019/05/24/shadowsocks/index.html">
 <meta property="og:site_name" content="墨问">
-<meta property="og:description" content="OS: Mac 10.13 framework: Hexo blog: Github pages  用Github pages发布blog， 同时在同一个repo新建名叫hexo的branch来管理markdown源文件  一. 在github新建repo 拥有一个 github 账号，  新建repo叫 &amp;lt;username&amp;gt;.github.io, 用你的账号替换&amp;lt;userna">
+<meta property="og:description" content="Prerequisite:  ubuntu 16.04 or above Python 3  1. Shadowsocks installation12sudo apt install python3-pippip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip 2. Configuration12sud">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-10T18:43:48.708Z">
+<meta property="og:updated_time" content="2019-05-24T14:11:29.654Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建个人博客">
-<meta name="twitter:description" content="OS: Mac 10.13 framework: Hexo blog: Github pages  用Github pages发布blog， 同时在同一个repo新建名叫hexo的branch来管理markdown源文件  一. 在github新建repo 拥有一个 github 账号，  新建repo叫 &amp;lt;username&amp;gt;.github.io, 用你的账号替换&amp;lt;userna">
+<meta name="twitter:title" content="install shadowsocks on ubuntu server">
+<meta name="twitter:description" content="Prerequisite:  ubuntu 16.04 or above Python 3  1. Shadowsocks installation12sudo apt install python3-pippip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip 2. Configuration12sud">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2018/06/11/搭建个人博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/05/24/shadowsocks/"/>
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>搭建个人博客 | 墨问</title>
+  <title>install shadowsocks on ubuntu server | 墨问</title>
   
 
 
@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/11/搭建个人博客/"/>
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/24/shadowsocks/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mersin"/>
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">搭建个人博客
+          <h1 class="post-title" itemprop="name headline">install shadowsocks on ubuntu server
 
               
             
@@ -350,7 +350,7 @@
                 
               
 
-              <time title="Created: 2018-06-11 00:26:20 / Modified: 02:43:48" itemprop="dateCreated datePublished" datetime="2018-06-11T00:26:20+08:00">2018-06-11</time>
+              <time title="Created: 2019-05-24 22:09:05 / Modified: 22:11:29" itemprop="dateCreated datePublished" datetime="2019-05-24T22:09:05+08:00">2019-05-24</time>
             
 
             
@@ -389,52 +389,18 @@
       
 
       
-        <ul>
-<li>OS: Mac 10.13</li>
-<li>framework: Hexo</li>
-<li>blog: Github pages</li>
+        <p>Prerequisite:</p>
+<ul>
+<li>ubuntu 16.04 or above</li>
+<li>Python 3</li>
 </ul>
-<p>用Github pages发布blog， 同时在同一个repo新建名叫hexo的branch来管理markdown源文件 </p>
-<h2 id="一-在github新建repo"><a href="#一-在github新建repo" class="headerlink" title="一. 在github新建repo"></a>一. 在github新建repo</h2><ol>
-<li>拥有一个 github 账号， </li>
-<li>新建repo叫 <code>&lt;username&gt;.github.io</code>, 用你的账号替换<code>&lt;username&gt;</code></li>
-</ol>
-<h2 id="二-在本地创建hexo-project"><a href="#二-在本地创建hexo-project" class="headerlink" title="二. 在本地创建hexo project"></a>二. 在本地创建hexo project</h2><p> 建议根据 <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener"><strong>hexo</strong></a> 文档进行安装配置</p>
-<ol>
-<li><p>安装 git</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install git</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装 node.js<br>从<a href="https://nodejs.org/en/#download" target="_blank" rel="noopener">官网下</a>载安装包</p>
-</li>
-<li><p>安装 hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地建站<br>将<code>&lt;username&gt;</code>换成自己 Github 的账号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;username&gt;.github.io</span><br><span class="line">$ cd &lt;username&gt;.github.io</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>基础配置<br>打开<code>&lt;username&gt;.github.io/_config.yml</code><br>更改以下参数，将<code>&lt;your_repo_address&gt;</code> 换成第一步中新建repo的地址</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: &lt;your_blog_name&gt;</span><br><span class="line">author: &lt;your_name&gt;</span><br><span class="line">...</span><br><span class="line">deploy: </span><br><span class="line">    type: git</span><br><span class="line">    repo: &lt;your_repo_address&gt;</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="三-上传源文件"><a href="#三-上传源文件" class="headerlink" title="三. 上传源文件"></a>三. 上传源文件</h2><ol>
-<li><p>在 <code>&lt;username&gt;.github.io</code>中执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git remote add origin &lt;your_repo_address&gt;</span><br><span class="line">$ git status</span><br><span class="line">$ git add source/_posts _config.yml</span><br><span class="line">$ git checkout -b hexo</span><br><span class="line">$ git commit -m initial</span><br><span class="line">$ git push origin/hexo hexo</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>设置<strong>hexo</strong>为默认分支</p>
-</li>
-</ol>
-<h2 id="四-发表文章"><a href="#四-发表文章" class="headerlink" title="四. 发表文章"></a>四. 发表文章</h2><ol>
-<li><p>新建文章</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &apos;新文章&apos;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>本地测试</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p> 打开 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 测试</p>
-</li>
-<li><p>上传Github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h2 id="1-Shadowsocks-installation"><a href="#1-Shadowsocks-installation" class="headerlink" title="1. Shadowsocks installation"></a>1. Shadowsocks installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install python3-pip</span><br><span class="line">pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip</span><br></pre></td></tr></table></figure>
+<h2 id="2-Configuration"><a href="#2-Configuration" class="headerlink" title="2. Configuration"></a>2. Configuration</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/shadowsocks</span><br><span class="line">sudo nano /etc/shadowsocks/config.json</span><br></pre></td></tr></table></figure>
+<p> Copy and paste<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"::"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"mypassword"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-Systemd-configuration"><a href="#3-Systemd-configuration" class="headerlink" title="3. Systemd configuration"></a>3. Systemd configuration</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/shadowsocks-server.service</span><br></pre></td></tr></table></figure>
+<p>Copy and paste<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Shadowsocks Server</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json</span><br><span class="line">Restart=on-abort</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
+<p>Start shadowsocks and enable auto-run after server is online<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start shadowsocks-server</span><br><span class="line">sudo systemctl <span class="built_in">enable</span> shadowsocks-server</span><br></pre></td></tr></table></figure></p>
+<p>Reference:<br><a href="https://www.polarxiong.com/archives/Ubuntu-16-04%E4%B8%8BShadowsocks%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96.html" target="_blank" rel="noopener">Ubuntu 16.04下Shadowsocks服务器端安装及优化 - Penguin</a></p>
 
       
     </div>
@@ -458,7 +424,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/博客/" rel="tag"># 博客</a>
+            <a href="/tags/server/" rel="tag"># server</a>
           
         </div>
       
@@ -471,8 +437,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/23/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/12/11/reading/the_moon_and_sixpense/" rel="next" title="自在随心，笑傲江湖 —《月亮与六便士》 读后感">
+                <i class="fa fa-chevron-left"></i> 自在随心，笑傲江湖 —《月亮与六便士》 读后感
               </a>
             
           </div>
@@ -480,10 +446,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/11/reading/the_moon_and_sixpense/" rel="prev" title="自在随心，笑傲江湖 —《月亮与六便士》 读后感">
-                自在随心，笑傲江湖 —《月亮与六便士》 读后感 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -615,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-在github新建repo"><span class="nav-number">1.</span> <span class="nav-text">一. 在github新建repo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-在本地创建hexo-project"><span class="nav-number">2.</span> <span class="nav-text">二. 在本地创建hexo project</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-上传源文件"><span class="nav-number">3.</span> <span class="nav-text">三. 上传源文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-发表文章"><span class="nav-number">4.</span> <span class="nav-text">四. 发表文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Shadowsocks-installation"><span class="nav-number">1.</span> <span class="nav-text">1. Shadowsocks installation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Configuration"><span class="nav-number">2.</span> <span class="nav-text">2. Configuration</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Systemd-configuration"><span class="nav-number">3.</span> <span class="nav-text">3. Systemd configuration</span></a></li></ol></div>
             
 
           </div>

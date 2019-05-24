@@ -14,26 +14,12 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next gemini use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -56,37 +42,39 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.1"/>
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1">
 
 
-
-
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222">
 
 
 
 
 
-<script type="text/javascript" id="hexo.configurations">
+
+
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '6.3.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    scheme: 'Gemini',
+    version: '7.1.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -120,12 +108,13 @@
 
 
 
-
+  
+  
   <link rel="canonical" href="http://yoursite.com/"/>
 
 
 
-<script type="text/javascript" id="page.configurations">
+<script id="page.configurations">
   CONFIG.page = {
     sidebar: "",
   };
@@ -142,30 +131,31 @@
 
 
 
+
+
+
   <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
   </style>
 </noscript>
 
@@ -184,7 +174,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -194,6 +184,7 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
     
   </div>
 
@@ -217,25 +208,57 @@
         
           
           <li class="menu-item menu-item-home menu-item-active">
-    <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br/>Tags</a>
+
   </li>
         
         
         
           
           <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives</a>
+
   </li>
 
       
       
     </ul>
   
-
-  
-    
 
   
 
@@ -258,6 +281,9 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -277,16 +303,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/11/搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/24/shadowsocks/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mersin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Mersin"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="墨问">
+      <meta itemprop="name" content="墨问"/>
     </span>
 
     
@@ -296,9 +322,332 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/06/11/搭建个人博客/" itemprop="url">
-                  搭建个人博客
-                </a>
+                
+                <a href="/2019/05/24/shadowsocks/" class="post-title-link" itemprop="url">install shadowsocks on ubuntu server</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-24 22:09:05 / Modified: 22:11:29" itemprop="dateCreated datePublished" datetime="2019-05-24T22:09:05+08:00">2019-05-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Prerequisite:</p>
+<ul>
+<li>ubuntu 16.04 or above</li>
+<li>Python 3</li>
+</ul>
+<h2 id="1-Shadowsocks-installation"><a href="#1-Shadowsocks-installation" class="headerlink" title="1. Shadowsocks installation"></a>1. Shadowsocks installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install python3-pip</span><br><span class="line">pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip</span><br></pre></td></tr></table></figure>
+<h2 id="2-Configuration"><a href="#2-Configuration" class="headerlink" title="2. Configuration"></a>2. Configuration</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir /etc/shadowsocks</span><br><span class="line">sudo nano /etc/shadowsocks/config.json</span><br></pre></td></tr></table></figure>
+<p> Copy and paste<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"::"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"mypassword"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-Systemd-configuration"><a href="#3-Systemd-configuration" class="headerlink" title="3. Systemd configuration"></a>3. Systemd configuration</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/shadowsocks-server.service</span><br></pre></td></tr></table></figure>
+<p>Copy and paste<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=Shadowsocks Server</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/ssserver -c /etc/shadowsocks/config.json</span><br><span class="line">Restart=on-abort</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
+<p>Start shadowsocks and enable auto-run after server is online<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start shadowsocks-server</span><br><span class="line">sudo systemctl <span class="built_in">enable</span> shadowsocks-server</span><br></pre></td></tr></table></figure></p>
+<p>Reference:<br><a href="https://www.polarxiong.com/archives/Ubuntu-16-04%E4%B8%8BShadowsocks%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96.html" target="_blank" rel="noopener">Ubuntu 16.04下Shadowsocks服务器端安装及优化 - Penguin</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/11/reading/the_moon_and_sixpense/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mersin"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="墨问"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/12/11/reading/the_moon_and_sixpense/" class="post-title-link" itemprop="url">自在随心，笑傲江湖 —《月亮与六便士》 读后感</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-12-11 12:30:00" itemprop="dateCreated datePublished" datetime="2018-12-11T12:30:00+08:00">2018-12-11</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-24 22:04:31" itemprop="dateModified" datetime="2019-05-24T22:04:31+08:00">2019-05-24</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="主要人物简介"><a href="#主要人物简介" class="headerlink" title="主要人物简介"></a>主要人物简介</h2><p><em>斯特里克兰德</em>：主人公， 原型 <a href="https://zh.wikipedia.org/zh-sg/%E4%BF%9D%E7%BE%85%C2%B7%E9%AB%98%E6%9B%B4" target="_blank" rel="noopener">保罗 · 高更</a> ，与梵高，塞尚并称后印象派三大巨匠。开始在伦敦做证券经纪人，事业有成，家庭幸福。后痴迷画画，独自一人来到巴黎，心中只有对至高艺术之美的追求，，却无法摆脱欲望的纠缠，导致施特略夫家破人亡，而他对此仿佛事不关己。最终病死在了他理想中的天堂塔希提。</p>
+<p><em>斯特里克兰德太太</em>：斯特里克兰德在伦敦的妻子。端庄漂亮，符合上流社会的女性规范，混迹上流社会，却没有办法理解并接受斯特里克兰德为了理想而离开自己离开家庭，始终对外宣传是他是跟一个女人去了巴黎，后来不得不自食其力，养活自己和一对儿女。在晚年，斯特里克兰德成名后，刻意营造当年夫妻恩爱的假象，试图抹去迫于生计外出挣钱的事实。聪明而又爱慕虚荣</p>
+<p><em>施特略夫</em>：斯特里克兰德出走巴黎时遇到的荷兰画家，唯一一个在早期就十分欣赏斯特里克兰德绘画的才华。尽管斯特里克兰德一直看不起他，他却一直接济斯特里克兰德，并在斯特里克兰德病重时将其带回家照顾，不想却导致自己的妻子勃朗什爱上了斯特里克兰德并最终自杀身亡。施特略夫始终惊叹于斯特里克兰德的才华，为此付出了一切，甚至在妻子死后还邀请斯特里克兰德一起前往荷兰。</p>
+<p><em>勃朗什</em>：施特略夫妻子。曾经是罗马贵族的家庭教师，被少爷欺骗感情后在绝望中遇到施特略夫与其结婚。开始十分厌恶斯特里克兰德并觉得他是个魔鬼，预言 “他会给我们带来灾难”。后来在照顾斯特里克兰德过程中爱上了他，却最终被斯特里克兰德抛弃而选择了自杀。</p>
+<p><em>爱塔</em>：塔希提的土著女子，爱慕斯特里克兰德，同他生有两个孩子，并在他罹患麻风病的最后几年一直陪伴在他身边</p>
+<h2 id="世俗和理想，-人性与神性"><a href="#世俗和理想，-人性与神性" class="headerlink" title="世俗和理想， 人性与神性"></a>世俗和理想， 人性与神性</h2><blockquote>
+<p>一般人都不是他们想要做的那种人，而是他们不得不做的那种人。</p>
+</blockquote>
+<p>月亮与六便士，月亮是高高在上，可望而不可及的理想，六便士是滚滚红尘，无法摆脱的世俗。我们不仅被欲望束缚着，也被自己束缚着。我们渴望锦衣玉食，希望功成名就，很多时候在欲望的裹挟下失去了本心，同时又放不下已经拥有的。有多少人能为了一个理想，义无反顾的离开原本幸福的生活，在物质条件的极度不满足情况下仍然执着的坚持对理想的追求。</p>
+<p>读书的过程中一直不喜欢斯特里克兰德，直到最后也是。他这个人适合独居，任何人跟他有羁绊都是很危险的一件事情。由于精神上对艺术对极致的美的追求，他对于世俗的生活，周围的一切其实都是很漠视的，是一种极度不在乎的态度，试图将自己完全与外界隔离开，唯一的联系是他作为人最原始的欲望，同时他自己对这种欲望又抱持着一种鄙视的态度。所以斯特里克兰德单方面对于任何人都是不抱有任何情感的，甚至对他自己也是。如果可以以一种灵魂状态去追求艺术，我相信他会毫不犹豫的抛弃肉身的束缚。他是一个几乎没有人性的家伙，想跟他发展爱情友情任何情，最终结果一定是悲剧。斯特里克兰德太太和勃朗什都很美丽端庄，但是都太过聪明的想把斯特里克兰德绑在身边，爱塔的特别之处在于她也毫不在乎世俗的礼法，单纯的想和斯特里克兰德在一起，可能经济独立的女性（爱塔）才能够如此自由的不受约束的去追求最本真的爱情吧。</p>
+<blockquote>
+<p>他对自己的命运从来也没有抱怨过，他从来也不沮丧。</p>
+</blockquote>
+<p>不喜欢归不喜欢，但是对他的认可和崇敬却是与日俱增。从最开始的抛弃一切物质条件，来到巴黎一个小破旅馆画画，到结尾的罹患重症却满不在乎，依旧是每天画画。把人性中最原始最本质的欲望赤裸裸的画在墙上之后，生命于他已经完全不重要了。“既美的惊人， 又污秽邪恶。” 他把追求理想这件事做到了极致，是我自认无法达到的境界。他对自己无比的诚实，清楚的知道自己的追求，漠视一切繁文缛节，是一种“老子就是喜欢画画”的状态。最后一年，他眼睛瞎了之后，“躺”在画里“看”画的时候，像一个圣人。</p>
+<p>但是敬佩又归敬佩，讲道理我也不想活成他那样，人性中有太多美好的东西我割舍不下。我也觉得没有必要。人生在世，每个人都有自己的追求，拿自己的价值观去衡量别人的选择，觉得别人是傻叉的同时别人觉得你更傻。人生不是考试，本来就没有正确答案，也不应该有统一的标准告诉你应该怎么活。外界世俗的标准很多时候让人不得不虚伪的面对世界，没有办法诚实的面对自己。伦敦，巴黎，斯特里克兰德太太，施特略夫，所有人，色彩斑斓的理想，无法挣脱的枷锁。</p>
+<p>希望自己可以想清楚，心中最重要的东西是什么，要追求的是什么，无所畏惧，自在随心，笑傲江湖。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/11/搭建个人博客/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mersin"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="墨问"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/06/11/搭建个人博客/" class="post-title-link" itemprop="url">搭建个人博客</a>
               
             
           </h1>
@@ -336,6 +685,7 @@
           
 
           
+            
             
           
 
@@ -424,6 +774,9 @@
     
 
     
+      
+    
+    
 
     
 
@@ -462,16 +815,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/hello-world/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Mersin">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Mersin"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="墨问">
+      <meta itemprop="name" content="墨问"/>
     </span>
 
     
@@ -481,9 +834,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/23/hello-world/" itemprop="url">
-                  Hello World
-                </a>
+                
+                <a href="/2018/05/23/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
               
             
           </h1>
@@ -517,6 +869,7 @@
           
 
           
+            
             
           
 
@@ -568,6 +921,9 @@
     
 
     
+      
+    
+    
 
     
 
@@ -612,19 +968,18 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Mersin</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <div class="site-description motion-element" itemprop="description"></div>
           </div>
 
           
@@ -634,7 +989,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -648,12 +1003,20 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                      <a href="/tags/">
+                    
+                  
+                    
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">tags</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -664,6 +1027,7 @@
           
 
           
+
           
 
           
@@ -675,7 +1039,7 @@
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -683,6 +1047,7 @@
 
     </div>
   </aside>
+  
 
 
         
@@ -691,7 +1056,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -703,9 +1068,7 @@
 </div>
 
 
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
 
 
 
@@ -713,7 +1076,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.1</div>
 
 
 
@@ -740,11 +1103,14 @@
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -776,71 +1142,54 @@
 
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+  <script src="/js/utils.js?v=7.1.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+  <script src="/js/motion.js?v=7.1.1"></script>
 
 
 
   
   
 
-  
 
-  
+  <script src="/js/affix.js?v=7.1.1"></script>
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
-
-
-
-  
-
-
-
-	
-
+  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
 
 
 
 
   
 
+  
 
 
+  <script src="/js/next-boot.js?v=7.1.1"></script>
 
+
+  
+
+  
+
+  
 
   
 
 
 
-
-
-
-
-
-
-
   
-
 
 
 
@@ -854,6 +1203,13 @@
   
 
   
+
+  
+
+  
+
+  
+
   
 
   
