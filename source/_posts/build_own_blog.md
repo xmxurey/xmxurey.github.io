@@ -1,7 +1,8 @@
 ---
 title: 搭建个人博客
-date: 2018-06-11 00:26:20
 tags: 博客
+abbrlink: 23941
+date: 2018-06-11 00:26:20
 ---
 
 - OS: Mac 10.13
@@ -14,6 +15,8 @@ tags: 博客
 
 1. 拥有一个 github 账号， 
 2. 新建repo叫 `<username>.github.io`, 用你的账号替换`<username>`
+
+<!-- more -->
 
 ## 二. 在本地创建hexo project
 
